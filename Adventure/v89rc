@@ -1,0 +1,7 @@
+sw501 = 00100000
+slot_p505 = H_88_3
+slot_p506 = H17
+h17_drive1 = H17_1
+h17_drive2 = H17_1
+h17_disk1 = HDOS_2-0_Hos_5_Update.h17raw
+h17_disk2 = advent.h17raw

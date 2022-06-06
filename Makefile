@@ -22,3 +22,9 @@ check:
 
 uncrust:
 	$(UNCRUSTIFY) -c VirtualH89/uncrust.cfg --no-backup VirtualH89/Src/*.cpp VirtualH89/Src/*.h
+
+ajo:
+	g++ -W -Wall -std=c++11 VirtualH89/Src/*.cpp -Wno-deprecated-declarations -framework OpenGL -framework GLUT -pthread -o v89
+	g++ -W -Wall -std=c++11 converter/h8d2h17raw.cpp -o h8d2h17raw
+	./h8d2h17raw Adventure/advent.h8d Adventure/advent.h17raw
+	cd Adventure; V89_CONFIG=v89rc ../v89
